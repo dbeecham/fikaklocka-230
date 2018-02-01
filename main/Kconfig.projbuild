@@ -1,0 +1,45 @@
+menu "WiFi Configuration"
+
+config WIFI_SSID
+    string "WiFi SSID"
+	default "myssid"
+	help
+		SSID (network name) for the example to connect to.
+
+config WIFI_PASSWORD
+    string "WiFi Password"
+	default "mypassword"
+	help
+		WiFi password (WPA or WPA2) for the example to use.
+
+		Can be left blank if the network has no security set.
+
+endmenu
+
+menu "NATS parser"
+
+config NATS_HOST
+    string "NATS Host"
+	default "nats.example.com"
+	help
+		Address to NATS server
+
+config NATS_PORT
+    string "NATS Port"
+	default "4443"
+	help
+        Port for NATS server
+
+config NATS_USER
+    string "NATS Username"
+	default "johndoe"
+	help
+        Username for NATS authentication
+
+config NATS_PASS
+    string "NATS Password"
+	default "mypassword"
+	help
+        Password for NATS authentication
+
+endmenu
